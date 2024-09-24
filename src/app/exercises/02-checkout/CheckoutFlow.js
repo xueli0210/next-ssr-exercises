@@ -8,7 +8,7 @@ function CheckoutFlow({
   taxRate,
   handleDeleteItem,
 }) {
-  if (items.length === 0) {
+  if (items === null || items.length === 0) {
     return (
       <div className="checkout-flow empty">
         <p>Your Cart is Empty</p>
